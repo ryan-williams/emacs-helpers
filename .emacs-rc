@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
 # $EDITOR, $DIFF
-export EDITOR=emacs
-alias enw="emacs -nw"
+if which emacs &>/dev/null; then
+  export EDITOR=emacs
+else
+  export EDITOR=nano
+fi
+alias enw="$EDITOR -nw"
