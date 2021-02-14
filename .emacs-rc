@@ -6,4 +6,4 @@ if which emacs &>/dev/null; then
 else
   export EDITOR=nano
 fi
-alias enw="$EDITOR -nw"
+alias enw="emacs -nw"
