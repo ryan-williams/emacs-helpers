@@ -7,3 +7,4 @@ else
   export EDITOR=nano
 fi
 alias enw="emacs -nw"
+alias em="emacs"
